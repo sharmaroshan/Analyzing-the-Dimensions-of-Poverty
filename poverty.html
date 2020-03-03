@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    <title> Analyzing Poverty in World</title>
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+
+        
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .modebar-container{
+                  display: none !important;
+              }
+
+       
+            .apexcharts-menu-icon {
+            visibility: hidden;
+          }
+          .apexcharts-reset-zoom-icon {
+              visibility: hidden;
+          }
+          .apexcharts-pan-icon {
+              visibility: hidden;
+          }
+          .apexcharts-zoom-icon.selected {
+              visibility: hidden;
+          }
+          .apexcharts-zoom-out-icon {
+              visibility: hidden;
+          }
+          .apexcharts-zoom-in-icon {
+              visibility: hidden;
+          }
+
+        ::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background:white; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:white; 
+}
+
+        </style>
+    
+
+    </head>
+
+    <body style="background-color: #fef2e4">
+        <div class="container-fluid">
+            <div class="col-sm-12">
+                <h2 style="margin-top: 15px; margin-bottom: 16px; text-align: center;
+                 color: black; font-size :38px; font-weight:bold; font-family: Charmonman">Multi Dimensional Poverty</h2>
+            </div>
+            <div class="col-sm-12" style="margin-left: 12px;width :97%; background-color:#ebdf00; height: 130px">
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <div class="col-sm-6">
+                        <i class='fas fa-home' style="font-size: 55px; 
+                    background: -webkit-linear-gradient(left,	darkgrey, #563e20);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;"></i>
+                    </div>
+                 
+                    <h4 style="color: black">Rural Poverty</h4>
+                    <h3 style="color: black; font-weight: bold">21.6</h3>
+                    <div class="vl"></div>
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <div class="col-sm-6">
+                        <i class='fas fa-building' style="font-size: 59px; 
+                        background: -webkit-linear-gradient(left,	darkgrey,#563e20);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;"></i>
+                    </div>
+                 
+                    <h4 style="color: black">Urban Poverty</h4>
+                    <h3 style="color: black; font-weight: bold">16.2</h3>
+                    <div class="vl"></div>
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <div class="col-sm-6">
+                        <i class='fas fa-globe' style=" margin-top: 10px; margin-left: -5px;
+                        font-size: 51px; 
+                        background: -webkit-linear-gradient(left,	darkgrey,#563e20);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;"></i>
+
+                    </div>
+                 
+                    <h4 style="color: black">Poorest Region</h4>
+                    <h3 style="color: black; font-weight: bold">Africa</h3>
+                    <div class="vl"></div>
+                </div>
+               
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <div class="col-sm-6">
+                        <i class='fas fa-globe' style="font-size: 50px;margin-top:5px; 
+                        
+                        background: -webkit-linear-gradient(left,	darkgrey,#563e20);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;"></i>
+                    </div>
+                 
+                    <h4 style="color: black">Poorest Country</h4>
+                    <h3 style="color: black;font-weight: bold">Nigeria</h3>
+                    <div class="vl"></div>
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <div class="col-sm-6">
+                        <i class='fa fa-usd' style="font-size: 50px; margin-top: 5px; color: black;
+                        background: -webkit-linear-gradient(left,	darkgrey,#563e20);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;"></i>
+                    </div>
+                 
+                    <h4 style="color: black">Richest Region</h4>
+                    <h3 style="color: black; font-weight: bold">Europe</h3>
+                    <div class="vl"></div>
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <div class="col-sm-6">
+                        <i class='fas fa-frown' style="font-size: 59px; color: black;
+                        background: -webkit-linear-gradient(left,	darkgrey,#563e20);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;"></i>
+                    </div>
+                 
+                    <h4 style="color: black">Country in Poverty zone</h4>
+                    <h3 style="color: black; font-weight: bold">31</h3>
+                   
+                </div>
+              
+                
+
+            </div>
+
+            <div class="col-sm-3" style="margin-left: 14px; margin-top: 10px; height: 290px;overflow:auto; background-color: #ffccac">
+                <h4 style="text-align:center; color: black; font-size:17px; margin-top: 5px">Poorest Urban Regions</h4>
+                <table style="margin-top: 10px; width: 100%; margin-bottom: 10px">
+                    <tr style="background-color: black; margin-bottom: 10px;text-align:left; color:white; font-size: 14px">
+                        <th>Country</th>
+                        <th>MPI</th>
+                  
+                    </tr>
+               
+                    
+                    <tr style="text-align: left;font-size: 13px">
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">South Sudan</td>
+                        <td style="color:  black;font-size: 15px">0.459</td>
+                       
+                    </tr>
+                  
+                   
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black;font-weight: bold; padding-top: 3px; font-size: 14px">Somalia</td>
+                        <td style="color:  black;font-size: 15px">0.293</td>
+                        
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Liberia</td>
+                        <td style="color:  black;font-size: 15px">0.290</td>
+                       
+                    </tr>
+                   
+                      
+            
+                    <tr style="text-align: left;font-size: 13px">
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Central African R.</td>
+            
+                        <td style="color:  black;;font-size: 15px">0.289</td>
+                       
+                    </tr>
+            
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black;font-weight: bold; padding-top: 3px; font-size: 14px">Niger</td>
+                        <td style="color:  black;font-size: 15px">0.276</td>
+                   
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Sierra Leone</td>
+                        <td style="color:  black;font-size: 15px">0.271</td>
+                      
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Ethiopia</td>
+                        <td style="color:  black;font-size: 15px">0.230</td>
+                        
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Congo</td>
+                        <td style="color:  black;font-size: 15px">0.228</td>
+                        
+                    </tr>
+             
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Burkina Faso</td>
+                        <td style="color:  black;font-size: 15px">0.226</td>
+                        
+                    </tr>
+                   
+                    
+                </table>
+            
+                
+            
+            </div>
+
+            
+            <div class="col-sm-6" style='width: 605px;margin-left:10px; margin-top: 30px;'>
+                <h3 style="text-align: center; font-weight: bold; font-family: Charmonman;
+                font-size: 21px; color: black">Poverty in different Regions of World</h3>
+                <div id="container8"></div>
+            </div>
+            <div class="col-sm-3" style="margin-left: 10px; margin-top: 10px; height: 290px;overflow:auto; background-color: #ffccac">
+                <h4 style="text-align:center; color: black; font-size:17px; margin-top: 5px">Poorest Rural Regions</h4>
+                <table style="margin-top: 10px; width: 100%; margin-bottom: 10px">
+                    <tr style="background-color: black; margin-bottom: 10px;text-align:left; color:white; font-size: 14px">
+                        <th>Country</th>
+                        <th>MPI</th>
+                       
+                    </tr>
+               
+                    
+                    <tr style="text-align: left;font-size: 13px">
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Niger</td>
+                        <td style="color:  black;font-size: 15px">0.669</td>
+                     
+                    </tr>
+                  
+                   
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black;font-weight: bold; padding-top: 3px; font-size: 14px">Somalia</td>
+                        <td style="color:  black;font-size: 15px">0.651</td>
+                      
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Ethiopia</td>
+                        <td style="color:  black;font-size: 15px">0.637</td>
+                      
+                    </tr>
+                 
+                  
+            
+                    <tr style="text-align: left;font-size: 13px">
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Burkina Faso</td>
+            
+                        <td style="color:  black;;font-size: 15px">0.621</td>
+                        
+                    </tr>
+            
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black;font-weight: bold; padding-top: 3px; font-size: 14px">Chad</td>
+                        <td style="color:  black;font-size: 15px">0.609</td>
+                       
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">South Sudan</td>
+                        <td style="color:  black;font-size: 15px">0.591</td>
+                        
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Guinea</td>
+                        <td style="color:  black;font-size: 15px">0.591</td>
+                    
+                    </tr>
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Sierra Leone</td>
+                        <td style="color:  black;font-size: 15px">0.551</td>
+                    </tr>
+             
+                    <tr style="text-align: left;font-size: 13px">
+            
+                        <td style="color: black; font-weight: bold;padding-top: 3px; font-size: 14px">Mali</td>
+                        <td style="color:  black;font-size: 15px">0.530</td>
+                        
+                    </tr>
+                   
+                    
+                </table>
+            
+                
+            
+            </div>
+
+            <div class="col-sm-12" style="margin-left: 12px;width :97%;margin-top: -20px; background-color:#ebdf00; height: 110px">
+                <div class="col-sm-2" style="margin-top: 20px">
+                   
+                    <h3>Sub Saharan Africa</h3>
+                    <h4 style="color: black;font-size: 13px">Most Poor Region: Nigeria</h4>
+                    <h4 style="color: black; font-size: 13px">Least Poor Region: Swaziland</h4>
+                  
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                   
+                    <h3>East Asia and Pacific</h3>
+                    <h4 style="color: black;font-size: 13px">Most Poor Region: Timor-leste</h4>
+                    <h4 style="color: black; font-size: 13px">Least Poor Region: China</h4>
+                   
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <h3>South Asia</h3>
+                    <h4 style="color: black;font-size: 13px">Most Poor Region: Afghan</h4>
+                    <h4 style="color: black; font-size: 13px">Least Poor Region: Bhutan</h4>
+                </div>
+               
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <h3>Arab States</h3>
+                    <h4 style="color: black;font-size: 13px">Most Poor Region: Sudan</h4>
+                    <h4 style="color: black; font-size: 13px">Least Poor Region: Jordan</h4>
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <h3>Latin America</h3>
+                    <h4 style="color: black;font-size: 13px">Most Poor Region: Haiti</h4>
+                    <h4 style="color: black; font-size: 13px">Least Poor Region: Jamaica</h4>
+                </div>
+                <div class="col-sm-2" style="margin-top: 22px">
+                    <h3>Europe Central Asia</h3>
+                    <h4 style="color: black;font-size: 13px">Most Poor Region: Tajikistan</h4>
+                    <h4 style="color: black; font-size: 13px">Least Poor Region: Uzbekistan</h4>
+                   
+                </div>
+              
+                
+
+            </div>
+
+
+        </div>
+
+        <script>
+            var data = [
+  {
+   
+    x: ['Arab States','East Asia','Europe','Latin America','South Asia','Africa'],
+    y: [0.115, 0.136, 0.025, 0.063, 0.219, 0.337],
+
+                        
+    type: 'bar',
+    marker: {
+ 
+        color: ['#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00',
+        '#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00','#ebdf00',],
+        line :{
+            width: [2, 2, 2, 2, 2, 2, 2, 2]
+        }
+ 
+},
+   
+ 
+  }
+];
+
+var layout ={
+ 
+    height: 270,
+    font: {
+        color: 'black',
+        size: 12
+    },
+   
+    margin: {
+        "t": 10,
+         "b": 60, 
+         "l": 55,
+          "r": 40},
+  
+    xaxis : {
+      tickangle: 0, 
+      title:''
+
+    },
+    yaxis : {
+      title: {
+       text: 'Poverty Ratio'
+      }
+    },
+    plot_bgcolor: '#fef2e4',
+    paper_bgcolor: '#fef2e4'
+   
+};
+
+Plotly.newPlot('container8', data, layout,  {responsive: true});
+
+            
+        </script>
+    </body>
+    
+</html>
